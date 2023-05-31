@@ -1,0 +1,30 @@
+body {
+    width: 500px;  
+    margin: auto; 
+    background-color: aqua;
+    justify-content: center; 
+}
+
+.title {
+    display: flex; 
+    font-size: 22px; 
+    color: crimson; 
+    justify-content: center; 
+    margin: auto; 
+}
+
+#settings {
+    display: flex; 
+    flex: 1; 
+    justify-content: space-evenly;
+}
+
+#sketchContainer {
+display: flex; 
+justify-content: center;
+margin: auto;  
+height: 575px; 
+width: 575px; 
+padding: 0;
+background-color: salmon; 
+}
