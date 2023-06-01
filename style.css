@@ -18,8 +18,8 @@ body {
 #sketchContainer {
     margin-top: 20px;
     display: inline-grid;
-    grid-template-columns: repeat(32, 1fr);
-    grid-template-rows: repeat(32, 1fr);
+    grid-template-columns: repeat(64, 1fr);
+    grid-template-rows: repeat(64, 1fr);
     border: 5px solid white;
     height: 575px;
     width: 575px;
@@ -27,6 +27,5 @@ body {
 }
 
 .pixelBox {
-    background-color: blue; 
-    border-style: solid;
+    background-color: #e7e0cb; 
 }
