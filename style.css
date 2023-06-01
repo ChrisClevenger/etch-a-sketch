@@ -1,22 +1,63 @@
-body {
-    background-color: lightgray;
-    justify-content: center; 
+* {
     box-sizing: border-box; 
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+}
+
+body {
+    display: flex; 
+    flex-direction: column; 
+    background-image: url("green-white-brick.png"); 
+    /* Art from Mitchell Luo on UnSplash => https://unsplash.com/photos/gbur-TgfCPY */
+    background-color: #d8d8d8;
+    justify-content: center; 
 }
 
 .title {
-    font-size: 22px; 
-    color: black; 
+    display: flex; 
+    font-size: 90px; 
+    color: #d8d8d8; 
+    background-color: black; 
     justify-content: center; 
     margin: auto; 
+    padding-bottom: 20px; 
 }
 
 #settings {
-    justify-content: space-evenly;
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    align-items: center; 
+    height: 80px; 
+}
+
+button { 
+    width: 100px; 
+    background-color: #2d4c3c; 
+    color: #d8d8d8; 
+}
+
+select {
+    width: 100px; 
+    background-color: #2d4c3c; 
+    color: #d8d8d8; 
+}
+
+#sketchBox {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 600px; 
+    width: 725px; 
+    padding: 0px;  
+    margin-top: 0px; 
+    margin-right: auto; 
+    margin-left: auto; 
 }
 
 #sketchContainer {
-    margin-top: 20px;
+    margin-top: 0px;
+    margin-right: auto; 
+    margin-left: auto; 
     display: inline-grid;
     grid-template-columns: repeat(64, 1fr);
     grid-template-rows: repeat(64, 1fr);
@@ -24,8 +65,9 @@ body {
     height: 575px;
     width: 575px;
     background-color: gray;
+    opacity: .9; 
 }
 
 .pixelBox {
-    background-color: #e7e0cb; 
+    background-color: #d8d8d8; 
 }
