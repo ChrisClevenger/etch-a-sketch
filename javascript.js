@@ -1,10 +1,17 @@
+
+
 function buildPixels(value) {
     const sketchContainer = document.querySelector("#sketchContainer");
 
     for (x = 0; x < (value); x++) {
+
         const pixelBox = document.createElement('div'); 
-        pixelBox.style.cssText = "background-color: blue; border-style: solid;"
+        pixelBox.classList.add("pixelBox"); 
         sketchContainer.appendChild(pixelBox); 
+
+        pixelBox.addEventListener('mouseover', () => {
+            pixelBox.style.backgroundColor = 'red';
+          });
         console.log(value); 
     }
 }
