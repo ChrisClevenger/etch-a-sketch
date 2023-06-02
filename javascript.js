@@ -43,7 +43,27 @@ function getRandomColor() {
 }
 
 rgbButton.addEventListener("click", () => {
-    console.log(getRandomColor()); 
-}); 
+    const pixelBoxes = document.querySelectorAll(".pixelBox");
+  
+    pixelBoxes.forEach((pixelBox) => {
+      pixelBox.addEventListener("mouseover", () => {
+        pixelBox.style.backgroundColor = getRandomColor();
+      });
+    });
+  });
+
+  // Build functionality for blackButton
+
+  const blackButton = document.querySelector("#black"); 
+
+  blackButton.addEventListener("click", () => {
+    const pixelBoxes = document.querySelectorAll(".pixelbox"); 
+
+    pixelBoxes.forEach((pixelBox) => {
+        pixelBox.addEventListener("mouseover", () => {
+            pixelBox.style.backgroundColor = "black"; 
+        }); 
+    }); 
+  }); 
 
 buildPixels(parseInt(pixelSelector.value));
