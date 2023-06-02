@@ -31,4 +31,19 @@ function buildPixels(value) {
   }
 }
 
+// Build functionality for RGB Button/Backgrounds
+
+const rgbButton = document.querySelector("#rgb"); 
+
+function getRandomColor() {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    return `rgb(${r}, ${g}, ${b})`;
+}
+
+rgbButton.addEventListener("click", () => {
+    console.log(getRandomColor()); 
+}); 
+
 buildPixels(parseInt(pixelSelector.value));
