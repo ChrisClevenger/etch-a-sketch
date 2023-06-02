@@ -54,16 +54,16 @@ rgbButton.addEventListener("click", () => {
 
   // Build functionality for blackButton
 
-  const blackButton = document.querySelector("#black"); 
+  const blackButton = document.querySelector("#black");
 
   blackButton.addEventListener("click", () => {
-    const pixelBoxes = document.querySelectorAll(".pixelbox"); 
-
+    const pixelBoxes = document.querySelectorAll(".pixelBox");
+  
     pixelBoxes.forEach((pixelBox) => {
-        pixelBox.addEventListener("mouseover", () => {
-            pixelBox.style.backgroundColor = "black"; 
-        }); 
-    }); 
-  }); 
+      pixelBox.addEventListener("mouseover", () => {
+        pixelBox.style.backgroundColor = "black";
+      });
+    });
+  });
 
 buildPixels(parseInt(pixelSelector.value));
