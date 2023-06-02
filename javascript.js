@@ -66,4 +66,15 @@ rgbButton.addEventListener("click", () => {
     });
   });
 
+// Build functionality for resetButton
+const resetButton = document.querySelector("#reset");
+
+resetButton.addEventListener("click", () => {
+  const pixelBoxes = document.querySelectorAll(".pixelBox");
+
+  pixelBoxes.forEach((pixelBox) => {
+    pixelBox.style.backgroundColor = "";
+  });
+});
+
 buildPixels(parseInt(pixelSelector.value));
